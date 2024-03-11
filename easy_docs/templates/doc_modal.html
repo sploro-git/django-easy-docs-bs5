@@ -52,14 +52,14 @@
 {% endif %}
 {% if not slug_view and not history_view %}
 <div class="d-flex justify-content-between align-items-center">
-    <button class="btn btn-primary" hx-get="{% url 'edit_document' documentation.pk %}" hx-target="#documentationModal .modal-body" hx-trigger="click" data-target="#documentationModal" type="button">Edit</button>
+    <button class="btn btn-primary" hx-get="{% url 'edit_document' documentation.pk %}" hx-target="#documentationModal .modal-body" hx-trigger="click" data-bs-target="#documentationModal" type="button">Edit</button>
     <div class="mr-2"><a href="{% url 'view_history' documentation.pk %}">History</a></div>
 </div>
 {% elif history_view %}
-<button class="btn btn-primary" hx-get="{% url 'revert_history' documentation.id history_id %}" hx-target="#documentationModal .modal-body" hx-trigger="click" data-target="#documentationModal" type="button">Revert Doc</button>
+<button class="btn btn-primary" hx-get="{% url 'revert_history' documentation.id history_id %}" hx-target="#documentationModal .modal-body" hx-trigger="click" data-bs-target="#documentationModal" type="button">Revert Doc</button>
 {% else %}
 <div class="d-flex justify-content-between align-items-center">
-    <button class="btn btn-primary" hx-get="{% url 'edit_document' documentation.pk %}?slug_view=True" hx-target="#content-start" hx-trigger="click" data-target="#documentationModal" type="button">Edit</button>
+    <button class="btn btn-primary" hx-get="{% url 'edit_document' documentation.pk %}?slug_view=True" hx-target="#content-start" hx-trigger="click" data-bs-target="#documentationModal" type="button">Edit</button>
     <div class="mr-2"><a href="{% url 'view_history' documentation.pk %}">History</a></div>
 </div>
 {% endif %}

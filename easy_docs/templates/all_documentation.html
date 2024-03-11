@@ -15,7 +15,7 @@
             </form>
             {% if user.is_staff %}
             <div>
-              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#documentationModal" hx-get="{% url 'add_documentation' %}" hx-trigger="click" hx-target="#documentationModal .modal-body" hx-swap="innerHTML">
+              <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#documentationModal" hx-get="{% url 'add_documentation' %}" hx-trigger="click" hx-target="#documentationModal .modal-body" hx-swap="innerHTML">
                 Add Documentation
               </button>
             </div>
@@ -41,7 +41,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="documentationModalLabel"><a href="{% url 'all_documentation' %}">Documentation</a></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>

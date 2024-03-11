@@ -1,11 +1,11 @@
 {% load static %}
-<button class="btn btn-primary" hx-get="{% url 'get_document' request.path %}" hx-target="#documentationModal .modal-body" hx-trigger="click" data-toggle="modal" data-target="#documentationModal" type="button">Help</button>
+<button class="btn btn-primary" hx-get="{% url 'get_document' request.path %}" hx-target="#documentationModal .modal-body" hx-trigger="click" data-bs-toggle="modal" data-bs-target="#documentationModal" type="button">Help</button>
 <div class="modal fade" id="documentationModal" tabindex="-1" role="dialog" aria-labelledby="documentationModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="max-width: 60%;">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="documentationModalLabel"><a href="{% url 'all_documentation' %}">Documentation</a></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
