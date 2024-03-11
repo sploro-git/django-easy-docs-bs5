@@ -1,5 +1,6 @@
-.large-checkbox {
+.form-check-input {
     width: 20px; 
     height: 20px; 
     cursor: pointer;
+    display: block;
 }
