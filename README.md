@@ -47,7 +47,7 @@ This package also takes advantage of several other packages, including:
 - [django-markdownx](https://neutronx.github.io/django-markdownx/)
 - [django-simple-history](https://django-simple-history.readthedocs.io/en/latest/)
 - [django-htmx](https://django-htmx.readthedocs.io/en/latest/)
-- [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) (required for modal functionality)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) (required for modal functionality)
 
 These are installed automatically when you install `django-easy-docs`, but you will need to add them to your `INSTALLED_APPS` as well:
 
