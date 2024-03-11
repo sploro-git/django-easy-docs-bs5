@@ -1,6 +1,6 @@
-# django-easy-docs
+# django-easy-docs-bs5
 
-A simple, opinionated way to add documentation to your website. Add a "Help" button to any page, and intuitively build the documentation for your Django app.
+A simple, opinionated way to add documentation to your website. Add a "Help" button to any page, and intuitively build the documentation for your Django app. Compatible with Bootstrap 5 
 
 This project is still in its early stages of development, and any contributors are welcomed.
 
