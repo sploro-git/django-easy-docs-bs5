@@ -4,18 +4,18 @@ with open('README.md', encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='django-easy-docs',
-    version='2.0.4',
+    name='django-easy-docs-bs5',
+    version='2.0.0',
     packages=find_packages(exclude=['*.migrations', '*.migrations.*', 'migrations.*', 'migrations', 'docs', 'docs.*']),
-    url='https://github.com/LewisFletcher/django-easy-docs',
-    author='Lewis Fletcher',
-    description='A simple documentation app for Django.',
-    download_url='https://pypi.org/project/django-easy-docs/',
+    url='https://github.com/sploro-git/django-easy-docs-bs5',
+    author='Ivan Pajares',
+    description='A simple documentation app for Django, using Bootstrap 5.',
+    download_url='https://pypi.org/project/django-easy-docs-bs5/',
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='MIT',
     keywords=['django', 'documentation', 'docs', 'easy', 'simple'],
-    author_email='lew.fletcher3@gmail.com',
+    author_email='ivan.pajares@sploro.eu',
     include_package_data=True,
     install_requires=[
         'Django>=4.0',
