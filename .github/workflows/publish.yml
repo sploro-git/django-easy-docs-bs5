@@ -25,6 +25,9 @@ jobs:
         rm -rf ./build
         rm -rf ./*.egg-info
     - name: Check authentication
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
       run: |
         echo $TWINE_USERNAME
         echo $TWINE_PASSWORD
