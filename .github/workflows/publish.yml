@@ -9,6 +9,9 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    # Reads the code to build it; PyPI uses its own token (KRNINFRA-200)
+    permissions:
+      contents: read
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
